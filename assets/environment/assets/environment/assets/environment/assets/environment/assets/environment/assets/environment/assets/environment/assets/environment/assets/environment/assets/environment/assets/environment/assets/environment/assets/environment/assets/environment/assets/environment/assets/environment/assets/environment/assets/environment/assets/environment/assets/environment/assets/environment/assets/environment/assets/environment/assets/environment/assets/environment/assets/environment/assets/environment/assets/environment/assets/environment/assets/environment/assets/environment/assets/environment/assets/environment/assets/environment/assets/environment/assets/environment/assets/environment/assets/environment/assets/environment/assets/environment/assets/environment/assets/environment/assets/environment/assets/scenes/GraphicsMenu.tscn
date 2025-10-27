@@ -1,0 +1,62 @@
+[gd_scene load_steps=4 format=3 uid="uid://yea150442j2b"]
+
+[ext_resource type="Script" uid="uid://danvg0uc2wx38" path="res://scripts/GraphicsMenu.gd" id="1_0wu4b"]
+[ext_resource type="FontFile" uid="uid://d4aco106sjx01" path="res://assets/fonts/Trajan Pro Regular/Trajan Pro Regular.ttf" id="2_7xg7n"]
+[ext_resource type="Texture2D" uid="uid://b8y5mer7geavt" path="res://assets/UI/GraphicsMenuImage.png" id="3_aacf7"]
+
+[node name="GraphicsMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_0wu4b")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 2
+offset_left = -6.0
+offset_top = -18.0
+offset_right = 3254.0
+offset_bottom = 2150.0
+color = Color(0, 0, 0, 1)
+
+[node name="GraphicsLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1136.0
+offset_top = 84.0
+offset_right = 2170.0
+offset_bottom = 284.0
+theme_override_fonts/font = ExtResource("2_7xg7n")
+theme_override_font_sizes/font_size = 200
+text = "Graphics"
+
+[node name="GraphicsMenuImage" type="Sprite2D" parent="."]
+position = Vector2(1693, 2020)
+scale = Vector2(7.46809, 6.73438)
+texture = ExtResource("3_aacf7")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 916.0
+offset_top = 584.0
+offset_right = 1240.0
+offset_bottom = 659.0
+
+[node name="Resolution" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="OptionButton" type="OptionButton" parent="VBoxContainer/Resolution"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_7xg7n")
+theme_override_font_sizes/font_size = 50
+text = "Resolution"
+
+[node name="BackButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1510.0
+offset_top = 1351.0
+offset_right = 1853.0
+offset_bottom = 1559.0
+theme_override_fonts/font = ExtResource("2_7xg7n")
+theme_override_font_sizes/font_size = 125
+text = "Back"
