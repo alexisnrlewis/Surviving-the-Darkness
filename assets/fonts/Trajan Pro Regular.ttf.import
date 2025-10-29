@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://d4aco106sjx01"
-path="res://.godot/imported/Trajan Pro Regular.ttf-936a1af797f02f682f6c3534c664323e.fontdata"
+uid="uid://bqeasmhefa2v6"
+path="res://.godot/imported/Trajan Pro Regular.ttf-043a3600ed67c7dc7a963caeeb6021bc.fontdata"
 
 [deps]
 
-source_file="res://assets/fonts/Trajan Pro Regular/Trajan Pro Regular.ttf"
-dest_files=["res://.godot/imported/Trajan Pro Regular.ttf-936a1af797f02f682f6c3534c664323e.fontdata"]
+source_file="res://assets/fonts/Trajan Pro Regular.ttf"
+dest_files=["res://.godot/imported/Trajan Pro Regular.ttf-043a3600ed67c7dc7a963caeeb6021bc.fontdata"]
 
 [params]
 

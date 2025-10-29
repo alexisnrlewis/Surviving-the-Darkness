@@ -10,28 +10,355 @@ script = ExtResource("1_clusv")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
-offset_left = -37.0
-offset_top = -11.0
-offset_right = 3259.0
-offset_bottom = 2195.0
+offset_left = -20.0
+offset_top = -17.0
+offset_right = 3334.0
+offset_bottom = 2189.0
 color = Color(0, 0, 0, 1)
 
 [node name="ControlsLabel" type="Label" parent="."]
 layout_mode = 0
-offset_left = 1110.0
-offset_top = 115.0
-offset_right = 2080.0
-offset_bottom = 291.0
+offset_left = 1114.0
+offset_top = 65.0
+offset_right = 2084.0
+offset_bottom = 241.0
 theme_override_fonts/font = ExtResource("2_ujbu6")
 theme_override_font_sizes/font_size = 175
 text = "Controls"
 
 [node name="BackButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 1443.0
-offset_top = 1587.0
-offset_right = 1786.0
-offset_bottom = 1721.0
+offset_left = 1452.0
+offset_top = 1949.0
+offset_right = 1795.0
+offset_bottom = 2083.0
 theme_override_fonts/font = ExtResource("2_ujbu6")
 theme_override_font_sizes/font_size = 125
 text = "Back"
+
+[node name="Player1Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 211.0
+offset_top = 436.0
+offset_right = 681.0
+offset_bottom = 536.0
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 100
+text = "Player 1:"
+
+[node name="Player2Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1978.0
+offset_top = 424.0
+offset_right = 2448.0
+offset_bottom = 524.0
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 100
+text = "Player 2:"
+
+[node name="Player1ControlsDesc" type="VBoxContainer" parent="Player2Label"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 0
+offset_left = -1789.0
+offset_top = 255.0
+offset_right = -973.0
+offset_bottom = 1187.0
+
+[node name="MoveRightLabel" type="Label" parent="Player2Label/Player1ControlsDesc"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "Move Right (Walk):"
+
+[node name="MoveLeftLabel" type="Label" parent="Player2Label/Player1ControlsDesc"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "Move Left (Walk):"
+
+[node name="RunLabel" type="Label" parent="Player2Label/Player1ControlsDesc"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "Run:"
+
+[node name="JumpLabel" type="Label" parent="Player2Label/Player1ControlsDesc"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "Jump:"
+
+[node name="AttackLabel" type="Label" parent="Player2Label/Player1ControlsDesc"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "Attack:"
+
+[node name="CollectResourceLabel" type="Label" parent="Player2Label/Player1ControlsDesc"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "Collect Resource:"
+
+[node name="DropResourceLabel" type="Label" parent="Player2Label/Player1ControlsDesc"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "Drop Resource:"
+
+[node name="CraftLabel" type="Label" parent="Player2Label/Player1ControlsDesc"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "Craft:"
+
+[node name="PlaceStructureLabel" type="Label" parent="Player2Label/Player1ControlsDesc"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "Place Structure:"
+
+[node name="Player2ControlsDesc" type="VBoxContainer" parent="Player2Label"]
+layout_mode = 0
+offset_left = -249.0
+offset_top = 257.0
+offset_right = 567.0
+offset_bottom = 1216.0
+
+[node name="MoveLeftLabel" type="Label" parent="Player2Label/Player2ControlsDesc"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "Move Left (Walk):"
+
+[node name="MoveRightLabel" type="Label" parent="Player2Label/Player2ControlsDesc"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "Move Right (Walk):"
+
+[node name="RunLabel" type="Label" parent="Player2Label/Player2ControlsDesc"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "Run:"
+
+[node name="JumpLabel" type="Label" parent="Player2Label/Player2ControlsDesc"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "Jump:"
+
+[node name="AttackLabel" type="Label" parent="Player2Label/Player2ControlsDesc"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "Attack:"
+
+[node name="CollectResourceLabel" type="Label" parent="Player2Label/Player2ControlsDesc"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "Collect Resource:"
+
+[node name="DropResourceLabel" type="Label" parent="Player2Label/Player2ControlsDesc"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "Drop Resource:"
+
+[node name="CraftLabel" type="Label" parent="Player2Label/Player2ControlsDesc"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "Craft:"
+
+[node name="PlaceStructureLabel" type="Label" parent="Player2Label/Player2ControlsDesc"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "Place Structure:"
+
+[node name="PauseGameLabel" type="Label" parent="Player2Label/Player2ControlsDesc"]
+layout_mode = 2
+
+[node name="PauseGameLabel" type="Label" parent="."]
+layout_mode = 2
+offset_left = 187.0
+offset_top = 1758.0
+offset_right = 1306.0
+offset_bottom = 1834.0
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "Pause Game (Both Players):"
+
+[node name="Player1Controls" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 1017.0
+offset_top = 688.0
+offset_right = 1681.0
+offset_bottom = 1620.0
+
+[node name="ALabel" type="Label" parent="Player1Controls"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "A"
+
+[node name="DLabel" type="Label" parent="Player1Controls"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "D"
+
+[node name="ShiftLabel" type="Label" parent="Player1Controls"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "Shift (Left Side)"
+
+[node name="WLabel" type="Label" parent="Player1Controls"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "W"
+
+[node name="SLabel" type="Label" parent="Player1Controls"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "S"
+
+[node name="ZLabel" type="Label" parent="Player1Controls"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "Z"
+
+[node name="XLabel" type="Label" parent="Player1Controls"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "X"
+
+[node name="CLabel" type="Label" parent="Player1Controls"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "C"
+
+[node name="VLabel" type="Label" parent="Player1Controls"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "V"
+
+[node name="Player2Controls" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 2562.0
+offset_top = 675.0
+offset_right = 3305.0
+offset_bottom = 1607.0
+
+[node name="MoveLeftLabel" type="Label" parent="Player2Controls"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "Left Arrow"
+
+[node name="MoveRightLabel" type="Label" parent="Player2Controls"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "Right Arrow"
+
+[node name="RunLabel" type="Label" parent="Player2Controls"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "Shift (Right Side)"
+
+[node name="JumpLabel" type="Label" parent="Player2Controls"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "Up Arrow"
+
+[node name="AttackLabel" type="Label" parent="Player2Controls"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "Down Arrow"
+
+[node name="JLabel" type="Label" parent="Player2Controls"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "J"
+
+[node name="KLabel" type="Label" parent="Player2Controls"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "K"
+
+[node name="LLabel" type="Label" parent="Player2Controls"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "L"
+
+[node name="MLabel" type="Label" parent="Player2Controls"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "M"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1356.0
+offset_top = 1759.0
+offset_right = 1494.0
+offset_bottom = 1835.0
+theme_override_fonts/font = ExtResource("2_ujbu6")
+theme_override_font_sizes/font_size = 75
+text = "Esc"

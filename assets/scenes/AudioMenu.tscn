@@ -2,7 +2,7 @@
 
 [ext_resource type="FontFile" uid="uid://d4aco106sjx01" path="res://assets/fonts/Trajan Pro Regular/Trajan Pro Regular.ttf" id="1_cfatg"]
 [ext_resource type="Script" uid="uid://d1o3ypnx1l1v6" path="res://scripts/AudioMenu.gd" id="1_pma2s"]
-[ext_resource type="Texture2D" uid="uid://etq21uyn0pvs" path="res://assets/UI/AudioMenuImage.png" id="2_p2m4q"]
+[ext_resource type="Texture2D" uid="uid://c1uehyxa6e8ke" path="res://assets/UI/AudioMenuImage.png" id="2_p2m4q"]
 
 [node name="AudioMenu" type="Control"]
 layout_mode = 3

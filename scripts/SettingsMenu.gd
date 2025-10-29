@@ -14,13 +14,13 @@ func _ready():
 
 # Button functions
 func _on_BackButton_pressed():
-	get_tree().change_scene_to_file("res://MainMenu.tscn")
+	get_tree().change_scene_to_file("res://assets/scenes/MainMenu.tscn")
 
 func _on_AudioButton_pressed():
-	get_tree().change_scene_to_file("res://assets/AudioMenu.tscn")
+	get_tree().change_scene_to_file("res://assets/scenes/AudioMenu.tscn")
 
 func _on_GraphicsButton_pressed():
-	get_tree().change_scene_to_file("res://assets/GraphicsMenu.tscn")
+	get_tree().change_scene_to_file("res://assets/scenes/GraphicsMenu.tscn")
 
 func _on_ControlsButton_pressed():
-	get_tree().change_scene_to_file("res://assets/ControlsMenu.tscn")
+	get_tree().change_scene_to_file("res://assets/scenes/ControlsMenu.tscn")

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://danvg0uc2wx38" path="res://scripts/GraphicsMenu.gd" id="1_0wu4b"]
 [ext_resource type="FontFile" uid="uid://d4aco106sjx01" path="res://assets/fonts/Trajan Pro Regular/Trajan Pro Regular.ttf" id="2_7xg7n"]
-[ext_resource type="Texture2D" uid="uid://b8y5mer7geavt" path="res://assets/UI/GraphicsMenuImage.png" id="3_aacf7"]
+[ext_resource type="Texture2D" uid="uid://1k1cdlhvb4cw" path="res://assets/UI/GraphicsMenuImage.png" id="3_aacf7"]
 
 [node name="GraphicsMenu" type="Control"]
 layout_mode = 3
@@ -11,10 +11,10 @@ script = ExtResource("1_0wu4b")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 2
-offset_left = -6.0
-offset_top = -18.0
-offset_right = 3254.0
-offset_bottom = 2150.0
+offset_left = -2.0
+offset_top = -74.0
+offset_right = 3258.0
+offset_bottom = 2094.0
 color = Color(0, 0, 0, 1)
 
 [node name="GraphicsLabel" type="Label" parent="."]
@@ -32,31 +32,60 @@ position = Vector2(1693, 2020)
 scale = Vector2(7.46809, 6.73438)
 texture = ExtResource("3_aacf7")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="GraphicsDesc" type="VBoxContainer" parent="."]
 layout_mode = 0
-offset_left = 916.0
-offset_top = 584.0
-offset_right = 1240.0
-offset_bottom = 659.0
+offset_left = 369.0
+offset_top = 756.0
+offset_right = 1389.0
+offset_bottom = 960.0
 
-[node name="Resolution" type="HBoxContainer" parent="VBoxContainer"]
-layout_mode = 2
-
-[node name="OptionButton" type="OptionButton" parent="VBoxContainer/Resolution"]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="VBoxContainer"]
+[node name="ResolutionLabel" type="Label" parent="GraphicsDesc"]
+custom_minimum_size = Vector2(300, 100)
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_7xg7n")
-theme_override_font_sizes/font_size = 50
-text = "Resolution"
+theme_override_font_sizes/font_size = 75
+text = "Resolution/Screen Size:"
+
+[node name="FullscreenLabel" type="Label" parent="GraphicsDesc"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_7xg7n")
+theme_override_font_sizes/font_size = 75
+text = "Fullscreen:"
 
 [node name="BackButton" type="Button" parent="."]
 layout_mode = 0
 offset_left = 1510.0
-offset_top = 1351.0
+offset_top = 1374.0
 offset_right = 1853.0
-offset_bottom = 1559.0
+offset_bottom = 1582.0
 theme_override_fonts/font = ExtResource("2_7xg7n")
 theme_override_font_sizes/font_size = 125
 text = "Back"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 0
+offset_left = 1453.0
+offset_top = 729.0
+offset_right = 2036.0
+offset_bottom = 945.0
+
+[node name="ResolutionOption" type="OptionButton" parent="VBoxContainer"]
+custom_minimum_size = Vector2(1.5, 1.5)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_7xg7n")
+theme_override_font_sizes/font_size = 75
+item_count = 3
+popup/item_0/text = "800X600"
+popup/item_0/id = 0
+popup/item_1/text = "1280x720"
+popup/item_1/id = 1
+popup/item_2/text = "1920x1080"
+popup/item_2/id = 2
+
+[node name="FullscreenCheckButton" type="CheckButton" parent="VBoxContainer"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+
+[connection signal="toggled" from="VBoxContainer/FullscreenCheckButton" to="." method="_on_fullscreen_check_button_toggled"]

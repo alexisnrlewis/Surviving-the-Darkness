@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dtk15ytyj6q2u" path="res://scripts/SettingsMenu.gd" id="1_4swpp"]
 [ext_resource type="FontFile" uid="uid://d4aco106sjx01" path="res://assets/fonts/Trajan Pro Regular/Trajan Pro Regular.ttf" id="1_ow6qp"]
-[ext_resource type="Texture2D" uid="uid://kswxvcmx7tg0" path="res://assets/UI/SettingsMenuImage.png" id="2_i5f8d"]
+[ext_resource type="Texture2D" uid="uid://dm0q7oac2tubx" path="res://assets/UI/SettingsMenuImage.png" id="2_i5f8d"]
 
 [node name="OptionsMenu" type="Control"]
 layout_mode = 3
@@ -19,10 +19,10 @@ color = Color(0, 0, 0, 1)
 
 [node name="SettingsTitle" type="Label" parent="."]
 layout_mode = 2
-offset_left = 1766.0
-offset_top = 131.0
-offset_right = 2731.0
-offset_bottom = 331.0
+offset_left = 1872.0
+offset_top = 113.0
+offset_right = 2837.0
+offset_bottom = 313.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_ow6qp")
 theme_override_font_sizes/font_size = 200
@@ -32,48 +32,48 @@ vertical_alignment = 1
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
-offset_left = -6.0
-offset_top = 3.0
+offset_left = -18.0
+offset_top = -7.0
 offset_right = 1418.0
 offset_bottom = 2209.0
 texture = ExtResource("2_i5f8d")
 
 [node name="AudioButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 2051.0
-offset_top = 674.0
-offset_right = 2486.0
-offset_bottom = 819.0
+offset_left = 2144.0
+offset_top = 522.0
+offset_right = 2579.0
+offset_bottom = 667.0
 theme_override_fonts/font = ExtResource("1_ow6qp")
 theme_override_font_sizes/font_size = 125
 text = "Audio"
 
 [node name="GraphicsButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 1961.0
-offset_top = 978.0
-offset_right = 2615.0
-offset_bottom = 1112.0
+offset_left = 2036.0
+offset_top = 835.0
+offset_right = 2690.0
+offset_bottom = 969.0
 theme_override_fonts/font = ExtResource("1_ow6qp")
 theme_override_font_sizes/font_size = 125
 text = "Graphics"
 
 [node name="ControlsButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 1943.0
-offset_top = 1263.0
-offset_right = 2644.0
-offset_bottom = 1397.0
+offset_left = 2014.0
+offset_top = 1149.0
+offset_right = 2715.0
+offset_bottom = 1283.0
 theme_override_fonts/font = ExtResource("1_ow6qp")
 theme_override_font_sizes/font_size = 125
 text = "Controls"
 
 [node name="BackButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 2135.0
-offset_top = 1589.0
-offset_right = 2478.0
-offset_bottom = 1723.0
+offset_left = 2207.0
+offset_top = 1669.0
+offset_right = 2550.0
+offset_bottom = 1803.0
 theme_override_fonts/font = ExtResource("1_ow6qp")
 theme_override_font_sizes/font_size = 125
 text = "Back"

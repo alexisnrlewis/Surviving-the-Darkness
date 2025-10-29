@@ -1,10 +1,10 @@
 [gd_scene load_steps=11 format=3 uid="uid://dwsulpkrat0ad"]
 
-[ext_resource type="FontFile" uid="uid://d4aco106sjx01" path="res://assets/fonts/Trajan Pro Regular/Trajan Pro Regular.ttf" id="1_uccpc"]
-[ext_resource type="Texture2D" uid="uid://cdr7xmnqnyilm" path="res://assets/UI/Screenshot_2025-10-26_at_7.06.14_PM-removebg-preview.png" id="2_wepcu"]
+[ext_resource type="FontFile" path="res://assets/fonts/Trajan Pro Regular/Trajan Pro Regular.ttf" id="1_uccpc"]
+[ext_resource type="Texture2D" uid="uid://c5i1m4j6iot2x" path="res://assets/UI/Screenshot_2025-10-26_at_7.06.14_PM-removebg-preview.png" id="2_wepcu"]
 [ext_resource type="Script" uid="uid://c2oov5rjvuk4x" path="res://scripts/MainMenu.gd" id="3_b364s"]
-[ext_resource type="Texture2D" uid="uid://cgb0ecmt0ty0s" path="res://assets/MainMenuBackgroundImage.png" id="4_5l30s"]
-[ext_resource type="AudioStream" uid="uid://b6qpo6ip6psiu" path="res://assets/music/Gregorian Chant.mp3" id="5_m0c66"]
+[ext_resource type="Texture2D" uid="uid://d0khcenkv8y31" path="res://assets/UI/GameBackground.png" id="4_1l0v7"]
+[ext_resource type="AudioStream" uid="uid://dtuwbxanh775o" path="res://assets/music/Gregorian Chant.mp3" id="5_m0c66"]
 
 [sub_resource type="GDScript" id="GDScript_mtava"]
 script/source = "extends Control
@@ -103,22 +103,22 @@ script = ExtResource("3_b364s")
 
 [node name="Background" type="TextureRect" parent="UI/MainMenu"]
 layout_mode = 0
-offset_left = -21.0
-offset_top = -63.0
-offset_right = 3438.0
-offset_bottom = 2135.0
-texture = ExtResource("4_5l30s")
+offset_left = -17.0
+offset_top = -70.0
+offset_right = 3490.0
+offset_bottom = 2137.0
+texture = ExtResource("4_1l0v7")
 stretch_mode = 6
 
 [node name="GameTitle" type="Label" parent="UI/MainMenu/Background"]
 layout_mode = 0
-offset_left = 141.0
-offset_top = 457.0
-offset_right = 3227.0
-offset_bottom = 708.0
+offset_left = 199.0
+offset_top = 837.0
+offset_right = 3285.0
+offset_bottom = 1088.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("1_uccpc")
-theme_override_font_sizes/font_size = 200
+theme_override_font_sizes/font_size = 175
 text = "SURVIVING THE DARKNESS"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -130,10 +130,10 @@ autoplay = true
 
 [node name="MenuButtons" type="VBoxContainer" parent="UI/MainMenu"]
 layout_mode = 0
-offset_left = 1215.0
-offset_top = 751.0
-offset_right = 2245.0
-offset_bottom = 987.0
+offset_left = 1188.0
+offset_top = 1119.0
+offset_right = 2377.0
+offset_bottom = 1355.0
 
 [node name="StartButton" type="Button" parent="UI/MainMenu/MenuButtons"]
 layout_mode = 2

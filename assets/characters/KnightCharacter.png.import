@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1ns3qwhllbvr"
-path="res://.godot/imported/MiniKnightRockTiles.png-202a759ae22fdd7aec91f967afd40b05.ctex"
+uid="uid://cyjp3kr7hqxhr"
+path="res://.godot/imported/KnightCharacter.png-ba0e1f3da54f57a70310dc0b69e813a3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/MiniKnightRockTiles.png"
-dest_files=["res://.godot/imported/MiniKnightRockTiles.png-202a759ae22fdd7aec91f967afd40b05.ctex"]
+source_file="res://assets/characters/KnightCharacter.png"
+dest_files=["res://.godot/imported/KnightCharacter.png-ba0e1f3da54f57a70310dc0b69e813a3.ctex"]
 
 [params]
 
