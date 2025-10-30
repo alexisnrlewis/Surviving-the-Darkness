@@ -1,0 +1,172 @@
+[gd_scene load_steps=4 format=3 uid="uid://mfvnvktta6av"]
+
+[ext_resource type="FontFile" uid="uid://bqeasmhefa2v6" path="res://assets/fonts/Trajan Pro Regular.ttf" id="1_7kl0s"]
+[ext_resource type="Texture2D" uid="uid://bib8u714k5gfm" path="res://assets/UI/health_bar_under.png" id="2_hkxsf"]
+[ext_resource type="Script" uid="uid://dj8kylaiu1ehp" path="res://scripts/Progress.gd" id="3_1but2"]
+
+[node name="Game" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="MainGameplayUI" type="CanvasLayer" parent="."]
+
+[node name="HUD" type="Control" parent="MainGameplayUI"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_top = 2.0
+offset_right = -1.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TopBar" type="HBoxContainer" parent="MainGameplayUI/HUD"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.24
+anchor_right = 0.765
+anchor_bottom = 0.143
+offset_left = 1.51999
+offset_right = 0.719971
+offset_bottom = 7.336
+grow_horizontal = 2
+
+[node name="WaveLabel" type="Label" parent="MainGameplayUI/HUD/TopBar"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_7kl0s")
+theme_override_font_sizes/font_size = 50
+text = "Night: 1/5"
+
+[node name="TimeLabel" type="Label" parent="MainGameplayUI/HUD/TopBar"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_7kl0s")
+theme_override_font_sizes/font_size = 50
+text = "Time: 06:00"
+
+[node name="RightPane" type="VBoxContainer" parent="MainGameplayUI/HUD"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="InventoryBar" type="HBoxContainer" parent="MainGameplayUI/HUD/RightPane"]
+layout_mode = 2
+
+[node name="ResourceSlot1" type="VBoxContainer" parent="MainGameplayUI/HUD/RightPane/InventoryBar"]
+layout_mode = 2
+
+[node name="Icon" type="TextureRect" parent="MainGameplayUI/HUD/RightPane/InventoryBar/ResourceSlot1"]
+layout_mode = 2
+
+[node name="CountLabel" type="Label" parent="MainGameplayUI/HUD/RightPane/InventoryBar/ResourceSlot1"]
+layout_mode = 2
+text = "0"
+
+[node name="ResourceSlot2" type="VBoxContainer" parent="MainGameplayUI/HUD/RightPane/InventoryBar"]
+layout_mode = 2
+
+[node name="CountLabel" type="Label" parent="MainGameplayUI/HUD/RightPane/InventoryBar/ResourceSlot2"]
+layout_mode = 2
+text = "0"
+
+[node name="Icon" type="TextureRect" parent="MainGameplayUI/HUD/RightPane/InventoryBar/ResourceSlot2"]
+layout_mode = 2
+
+[node name="ResourceSlot3" type="VBoxContainer" parent="MainGameplayUI/HUD/RightPane/InventoryBar"]
+layout_mode = 2
+
+[node name="CountLabel" type="Label" parent="MainGameplayUI/HUD/RightPane/InventoryBar/ResourceSlot3"]
+layout_mode = 2
+text = "0"
+
+[node name="Icon" type="TextureRect" parent="MainGameplayUI/HUD/RightPane/InventoryBar/ResourceSlot3"]
+layout_mode = 2
+
+[node name="ResourceSlot4" type="VBoxContainer" parent="MainGameplayUI/HUD/RightPane/InventoryBar"]
+layout_mode = 2
+
+[node name="CountLabel" type="Label" parent="MainGameplayUI/HUD/RightPane/InventoryBar/ResourceSlot4"]
+layout_mode = 2
+text = "0"
+
+[node name="Icon" type="TextureRect" parent="MainGameplayUI/HUD/RightPane/InventoryBar/ResourceSlot4"]
+layout_mode = 2
+
+[node name="ResourceSlot5" type="VBoxContainer" parent="MainGameplayUI/HUD/RightPane/InventoryBar"]
+layout_mode = 2
+
+[node name="CountLabel" type="Label" parent="MainGameplayUI/HUD/RightPane/InventoryBar/ResourceSlot5"]
+layout_mode = 2
+text = "0"
+
+[node name="Icon" type="TextureRect" parent="MainGameplayUI/HUD/RightPane/InventoryBar/ResourceSlot5"]
+layout_mode = 2
+
+[node name="BottomBar" type="HBoxContainer" parent="MainGameplayUI/HUD"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -226.0
+offset_top = -125.0
+offset_right = 328.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Player1HealthBar" type="TextureProgressBar" parent="MainGameplayUI/HUD/BottomBar"]
+custom_minimum_size = Vector2(250, 125)
+layout_mode = 2
+texture_under = ExtResource("2_hkxsf")
+script = ExtResource("3_1but2")
+
+[node name="Player1Health" type="Label" parent="MainGameplayUI/HUD/BottomBar/Player1HealthBar"]
+layout_mode = 0
+offset_left = -13.0
+offset_top = -30.0
+offset_right = 214.0
+offset_bottom = -4.0
+theme_override_fonts/font = ExtResource("1_7kl0s")
+theme_override_font_sizes/font_size = 25
+text = "Player 1 Health:"
+
+[node name="Player2HealthBar" type="TextureProgressBar" parent="MainGameplayUI/HUD/BottomBar"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+texture_under = ExtResource("2_hkxsf")
+script = ExtResource("3_1but2")
+
+[node name="Player2Health" type="Label" parent="MainGameplayUI/HUD/BottomBar/Player2HealthBar"]
+layout_mode = 0
+offset_left = -14.0
+offset_top = -28.0
+offset_right = 213.0
+offset_bottom = -2.0
+theme_override_fonts/font = ExtResource("1_7kl0s")
+theme_override_font_sizes/font_size = 25
+text = "Player 2 Health:"
+
+[node name="Popups" type="Control" parent="MainGameplayUI"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CraftPopup" type="Window" parent="MainGameplayUI/Popups"]
+position = Vector2i(0, 36)
+
+[node name="RespawnLabel" type="Label" parent="MainGameplayUI/Popups"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0

@@ -1,36 +1,31 @@
 extends Control
 
-# Reference to AudioManager
-var AudioManagerInstance : Node = null
+@onready var play_button = $GameOptions/PlayButton
+@onready var settings_button = $GameOptions/SettingsButton
+@onready var credits_button = $GameOptions/CreditsButton
+@onready var quit_button = $GameOptions/QuitButton
 
 func _ready():
+	# Connect buttons to their functions
+	play_button.pressed.connect(_on_play_pressed)
+	settings_button.pressed.connect(_on_settings_pressed)
+	credits_button.pressed.connect(_on_credits_pressed)
+	quit_button.pressed.connect(_on_quit_pressed)
 
-	# Connect Quit button
-	$MenuButtons/QuitButton.pressed.connect(Callable(self, "_on_quit_pressed"))
+# === BUTTON FUNCTIONS ===
 
-	# Connect Options button
-	$MenuButtons/SettingsButton.pressed.connect(Callable(self, "_on_options_pressed"))
+func _on_play_pressed():
+	print("Play button pressed")
+	get_tree().change_scene_to_file("res://assets/scenes/Game.tscn")
 
-	# Connect Start button
-	$MenuButtons/StartButton.pressed.connect(Callable(self, "_on_start_pressed"))
+func _on_settings_pressed():
+	print("Settings button pressed")
+	get_tree().change_scene_to_file("res://assets/scenes/SettingsMenu.tscn")
 
+func _on_credits_pressed():
+	print("Credits button pressed")
+	get_tree().change_scene_to_file("res://assets/scenes/CreditsMenu.tscn")
 
-# Quit the game
 func _on_quit_pressed():
+	print("Quit button pressed")
 	get_tree().quit()
-
-
-# Load OptionsMenu scene
-func _on_options_pressed():
-	var options_scene = load("res://assets/SettingsMenu.tscn")
-	if options_scene:
-		var options_instance = options_scene.instantiate()
-		get_tree().root.add_child(options_instance)
-		hide()  # hide main menu while options menu is visible
-	else:
-		push_error("❌ Could not load SettingsMenu scene! Check the path.")
-
-
-# Start the game → load HealthBar scene
-func _on_start_pressed():
-	get_tree().change_scene_to_file("res://Scenes/HealthBar.tscn")  # update path if needed

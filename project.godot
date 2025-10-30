@@ -11,13 +11,17 @@ config_version=5
 [application]
 
 config/name="Surviving the Darkness"
-run/main_scene="uid://dwsulpkrat0ad"
+run/main_scene="uid://dgtot8tktbdia"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="uid://5iyrks6lakgl"
 
 [autoload]
 
 AudioManager="*res://scripts/AudioManager.gd"
+
+[display]
+
+window/size/mode=3
 
 [editor]
 

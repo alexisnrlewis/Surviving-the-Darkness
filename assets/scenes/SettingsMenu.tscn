@@ -1,8 +1,20 @@
-[gd_scene load_steps=4 format=3 uid="uid://mha5l8mhjmdr"]
+[gd_scene load_steps=8 format=3 uid="uid://mha5l8mhjmdr"]
 
-[ext_resource type="Script" uid="uid://dtk15ytyj6q2u" path="res://scripts/SettingsMenu.gd" id="1_4swpp"]
-[ext_resource type="FontFile" uid="uid://d4aco106sjx01" path="res://assets/fonts/Trajan Pro Regular/Trajan Pro Regular.ttf" id="1_ow6qp"]
-[ext_resource type="Texture2D" uid="uid://dm0q7oac2tubx" path="res://assets/UI/SettingsMenuImage.png" id="2_i5f8d"]
+[ext_resource type="Script" uid="uid://ceu04dn3cx1sj" path="res://scripts/SettingsMenu.gd" id="1_4swpp"]
+[ext_resource type="FontFile" uid="uid://bqeasmhefa2v6" path="res://assets/fonts/Trajan Pro Regular.ttf" id="1_ow6qp"]
+[ext_resource type="Texture2D" uid="uid://cb2j3qx5pw841" path="res://assets/UI/SettingsMenuImage.png" id="2_i5f8d"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l1lxh"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wrrja"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qwddf"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_utpob"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [node name="OptionsMenu" type="Control"]
 layout_mode = 3
@@ -11,69 +23,78 @@ script = ExtResource("1_4swpp")
 
 [node name="Background" type="ColorRect" parent="."]
 layout_mode = 0
-offset_left = -16.0
-offset_top = -12.0
-offset_right = 3456.0
-offset_bottom = 2207.0
+offset_left = -4.0
+offset_top = -8.0
+offset_right = 3468.0
+offset_bottom = 2211.0
 color = Color(0, 0, 0, 1)
 
 [node name="SettingsTitle" type="Label" parent="."]
 layout_mode = 2
-offset_left = 1872.0
-offset_top = 113.0
-offset_right = 2837.0
-offset_bottom = 313.0
-theme_override_colors/font_color = Color(1, 1, 1, 1)
+offset_left = 1882.0
+offset_top = 84.0
+offset_right = 2847.0
+offset_bottom = 284.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_fonts/font = ExtResource("1_ow6qp")
-theme_override_font_sizes/font_size = 200
+theme_override_font_sizes/font_size = 125
 text = "Settings"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
-offset_left = -18.0
-offset_top = -7.0
-offset_right = 1418.0
-offset_bottom = 2209.0
+offset_left = -62.0
+offset_top = -9.0
+offset_right = 1422.0
+offset_bottom = 2207.0
 texture = ExtResource("2_i5f8d")
 
 [node name="AudioButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 2144.0
-offset_top = 522.0
-offset_right = 2579.0
-offset_bottom = 667.0
+offset_left = 2140.0
+offset_top = 328.0
+offset_right = 2575.0
+offset_bottom = 473.0
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_ow6qp")
-theme_override_font_sizes/font_size = 125
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxFlat_l1lxh")
 text = "Audio"
 
 [node name="GraphicsButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 2036.0
-offset_top = 835.0
-offset_right = 2690.0
-offset_bottom = 969.0
+offset_left = 2032.0
+offset_top = 532.0
+offset_right = 2686.0
+offset_bottom = 666.0
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_ow6qp")
-theme_override_font_sizes/font_size = 125
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxFlat_wrrja")
 text = "Graphics"
 
 [node name="ControlsButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 2014.0
-offset_top = 1149.0
-offset_right = 2715.0
-offset_bottom = 1283.0
+offset_left = 2012.0
+offset_top = 715.0
+offset_right = 2713.0
+offset_bottom = 849.0
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_ow6qp")
-theme_override_font_sizes/font_size = 125
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxFlat_qwddf")
 text = "Controls"
 
 [node name="BackButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 2207.0
-offset_top = 1669.0
-offset_right = 2550.0
-offset_bottom = 1803.0
+offset_left = 2197.0
+offset_top = 1431.0
+offset_right = 2540.0
+offset_bottom = 1565.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 0, 0, 1)
 theme_override_fonts/font = ExtResource("1_ow6qp")
 theme_override_font_sizes/font_size = 125
+theme_override_styles/normal = SubResource("StyleBoxFlat_utpob")
 text = "Back"

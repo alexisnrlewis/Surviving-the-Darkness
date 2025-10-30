@@ -1,0 +1,171 @@
+[gd_scene load_steps=4 format=3 uid="uid://c81vrp1cy358c"]
+
+[ext_resource type="FontFile" uid="uid://bqeasmhefa2v6" path="res://assets/fonts/Trajan Pro Regular.ttf" id="1_gm35c"]
+[ext_resource type="Script" uid="uid://cile3uxubas0q" path="res://assets/scenes/CreditsMenu.gd" id="1_tsisa"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tsisa"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="CreditsMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_tsisa")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 3508.0
+offset_bottom = 2266.0
+color = Color(0, 0, 0, 1)
+
+[node name="CreditsTitle" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1463.0
+offset_top = 68.0
+offset_right = 2006.0
+offset_bottom = 194.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_gm35c")
+theme_override_font_sizes/font_size = 125
+text = "Credits"
+
+[node name="CreditsPanelKilijah" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 377.0
+offset_top = 240.0
+offset_right = 3268.0
+offset_bottom = 634.0
+
+[node name="Subtitle1" type="Label" parent="CreditsPanelKilijah"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_gm35c")
+theme_override_font_sizes/font_size = 90
+text = "Gameplay Programmer:"
+
+[node name="KILIJAH" type="Label" parent="CreditsPanelKilijah"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_gm35c")
+theme_override_font_sizes/font_size = 75
+text = "Kilijah"
+
+[node name="Label" type="Label" parent="CreditsPanelKilijah"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_gm35c")
+theme_override_font_sizes/font_size = 60
+text = "Oversees the overall structure of the game
+Implements core gameplay logic (player movement, scoring, rules)
+Coordinates code integration and manages GitHub"
+
+[node name="Natavia" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CreditsPanelGabby" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 362.0
+offset_top = 700.0
+offset_right = 3118.0
+offset_bottom = 1094.0
+
+[node name="Gabby" type="Label" parent="CreditsPanelGabby"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_gm35c")
+theme_override_font_sizes/font_size = 90
+text = "Level Designer and Environment Builder:"
+
+[node name="Label" type="Label" parent="CreditsPanelGabby"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_gm35c")
+theme_override_font_sizes/font_size = 75
+text = "Gabby"
+
+[node name="Label2" type="Label" parent="CreditsPanelGabby"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_gm35c")
+theme_override_font_sizes/font_size = 60
+text = "Creates visual layout of the game
+Builds scenes, places objects, enemies, and items
+Manages lighting and background design"
+
+[node name="CreditsPanelAlexis" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 358.0
+offset_top = 1168.0
+offset_right = 2889.0
+offset_bottom = 1562.0
+
+[node name="Label" type="Label" parent="CreditsPanelAlexis"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_gm35c")
+theme_override_font_sizes/font_size = 90
+text = "UI & Asset Creator:"
+
+[node name="Label2" type="Label" parent="CreditsPanelAlexis"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_gm35c")
+theme_override_font_sizes/font_size = 75
+text = "Alexis"
+
+[node name="Label3" type="Label" parent="CreditsPanelAlexis"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_gm35c")
+theme_override_font_sizes/font_size = 60
+text = "Designs menus, pause screens, and score displays
+Sources or creates sprites, textures, and audio
+Ensures cohesive visual and auditory style"
+
+[node name="CreditsPanelNatavia" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 346.0
+offset_top = 1634.0
+offset_right = 3378.0
+offset_bottom = 2028.0
+
+[node name="Label" type="Label" parent="CreditsPanelNatavia"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_gm35c")
+theme_override_font_sizes/font_size = 90
+text = "Mechanics & Testing Developer:"
+
+[node name="Label2" type="Label" parent="CreditsPanelNatavia"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_gm35c")
+theme_override_font_sizes/font_size = 75
+text = "Natavia"
+
+[node name="Label3" type="Label" parent="CreditsPanelNatavia"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_gm35c")
+theme_override_font_sizes/font_size = 60
+text = "Implements gameplay systems (power-ups, enemy behaviors, collisions)
+Conducts frequent tests and playtesting sessions with the team
+Ensures consistent quality and fixes bugs"
+
+[node name="BackButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 3014.0
+offset_top = 1850.0
+offset_right = 3223.0
+offset_bottom = 1934.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_gm35c")
+theme_override_font_sizes/font_size = 75
+theme_override_styles/normal = SubResource("StyleBoxFlat_tsisa")
+text = "Back"

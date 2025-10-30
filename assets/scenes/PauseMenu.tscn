@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8o3ns7dx1fri"]
+
+[ext_resource type="FontFile" uid="uid://bqeasmhefa2v6" path="res://assets/fonts/Trajan Pro Regular.ttf" id="1_g8a6p"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g8a6p"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="Node2D" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 3388.0
+offset_bottom = 2172.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="ColorRect"]
+layout_mode = 0
+offset_left = 832.0
+offset_top = 1080.0
+offset_right = 2693.0
+offset_bottom = 1180.0
+theme_override_fonts/font = ExtResource("1_g8a6p")
+theme_override_font_sizes/font_size = 75
+text = "Are you ready to get back to the darkness?"
+
+[node name="PausedLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1554.0
+offset_top = 872.0
+offset_right = 1935.0
+offset_bottom = 972.0
+theme_override_fonts/font = ExtResource("1_g8a6p")
+theme_override_font_sizes/font_size = 100
+text = "Paused"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1634.0
+offset_top = 1317.0
+offset_right = 1867.0
+offset_bottom = 1401.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_g8a6p")
+theme_override_font_sizes/font_size = 75
+theme_override_styles/normal = SubResource("StyleBoxFlat_g8a6p")
+text = "Start"

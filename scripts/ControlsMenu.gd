@@ -8,4 +8,4 @@ func _ready():
 
 # Go back to SettingsMenu
 func _on_BackButton_pressed():
-	get_tree().change_scene_to_file("res://assets/SettingsMenu.tscn")
+	get_tree().change_scene_to_file("res://assets/scenes/SettingsMenu.tscn")
