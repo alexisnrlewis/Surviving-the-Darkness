@@ -17,7 +17,7 @@ config/icon="uid://5iyrks6lakgl"
 
 [autoload]
 
-AudioManager="*res://scripts/AudioManager.gd"
+AudioManager="*res://assets/UI/AudioManager.gd"
 
 [display]
 

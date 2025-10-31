@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cqfkgecmj8w1r"]
 
-[ext_resource type="Script" uid="uid://dabynlka8y0an" path="res://assets/scenes/EnemyHealthBar.gd" id="1_x7r07"]
+[ext_resource type="Script" uid="uid://dabynlka8y0an" path="res://scripts/EnemyHealthBar.gd" id="1_x7r07"]
 
 [node name="EnemyHealthBar" type="Control"]
 layout_mode = 3

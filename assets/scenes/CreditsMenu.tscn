@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c81vrp1cy358c"]
 
 [ext_resource type="FontFile" uid="uid://bqeasmhefa2v6" path="res://assets/fonts/Trajan Pro Regular.ttf" id="1_gm35c"]
-[ext_resource type="Script" uid="uid://cile3uxubas0q" path="res://assets/scenes/CreditsMenu.gd" id="1_tsisa"]
+[ext_resource type="Script" uid="uid://cile3uxubas0q" path="res://scripts/CreditsMenu.gd" id="1_tsisa"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tsisa"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
