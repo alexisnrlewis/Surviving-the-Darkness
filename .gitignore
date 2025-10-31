@@ -1,8 +1,3 @@
->>>>>>> cd7c85d8e36ae8cbd1ad238e0ede2b8895cb30b5
-```
-
-That's a Git merge conflict leftover. Your final `.gitignore` should look like this:
-```
 # Godot 4+ specific ignores
 .godot/
 .nomedia
