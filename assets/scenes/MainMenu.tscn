@@ -1,84 +1,57 @@
-[gd_scene load_steps=8 format=3 uid="uid://dgtot8tktbdia"]
+[gd_scene load_steps=3 format=3 uid="uid://n12ju4wdgeby"]
 
 [ext_resource type="Script" uid="uid://bfhfqf6l3cpjk" path="res://scripts/MainMenu.gd" id="1_c1eu8"]
-[ext_resource type="Texture2D" uid="uid://d0khcenkv8y31" path="res://assets/UI/GameBackgroundImage.png" id="2_t6dbj"]
 [ext_resource type="FontFile" uid="uid://bqeasmhefa2v6" path="res://assets/fonts/Trajan Pro Regular.ttf" id="4_nory3"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t6dbj"]
-bg_color = Color(0, 0, 0, 0)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u804d"]
-bg_color = Color(0, 0, 0, 0)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c1eu8"]
-bg_color = Color(0, 0, 0, 0)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1l0v7"]
-bg_color = Color(0, 0, 0, 0)
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
-anchor_right = 3.049
-anchor_bottom = 3.478
-offset_right = 0.551758
-offset_bottom = 0.255859
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -258.0
+offset_right = 1704.0
+offset_bottom = 1290.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_c1eu8")
 
-[node name="MainMenuBackgroundImage" type="TextureRect" parent="."]
+[node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
-offset_right = 3522.0
-offset_bottom = 2256.0
-texture = ExtResource("2_t6dbj")
+offset_left = 8.0
+offset_top = 274.0
+offset_right = 2880.0
+offset_bottom = 2262.0
+color = Color(0, 0, 0, 1)
 
-[node name="GameTitle" type="Label" parent="."]
+[node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 866.0
-offset_top = 840.0
-offset_right = 2555.0
-offset_bottom = 966.0
+offset_left = 564.0
+offset_top = 590.0
+offset_right = 2253.0
+offset_bottom = 716.0
 theme_override_fonts/font = ExtResource("4_nory3")
 theme_override_font_sizes/font_size = 125
 text = "Surviving the Darkness"
 
 [node name="GameOptions" type="VBoxContainer" parent="."]
 layout_mode = 0
-offset_left = 1282.0
-offset_top = 1165.0
-offset_right = 2145.0
-offset_bottom = 1581.0
+offset_left = 1142.0
+offset_top = 1046.0
+offset_right = 1926.0
+offset_bottom = 1182.0
 
 [node name="PlayButton" type="Button" parent="GameOptions"]
 layout_mode = 2
-theme_override_colors/font_color = Color(1, 0, 0, 1)
-theme_override_fonts/font = ExtResource("4_nory3")
-theme_override_font_sizes/font_size = 100
-theme_override_styles/normal = SubResource("StyleBoxFlat_t6dbj")
 text = "Play"
 
 [node name="SettingsButton" type="Button" parent="GameOptions"]
 layout_mode = 2
-theme_override_colors/font_color = Color(1, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("4_nory3")
-theme_override_font_sizes/font_size = 100
-theme_override_styles/normal = SubResource("StyleBoxFlat_u804d")
 text = "Settings"
 
 [node name="CreditsButton" type="Button" parent="GameOptions"]
 layout_mode = 2
-theme_override_colors/font_color = Color(1, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("4_nory3")
-theme_override_font_sizes/font_size = 100
-theme_override_styles/normal = SubResource("StyleBoxFlat_c1eu8")
 text = "Credits"
 
 [node name="QuitButton" type="Button" parent="GameOptions"]
 layout_mode = 2
-theme_override_colors/font_color = Color(1, 0, 0, 1)
-theme_override_fonts/font = ExtResource("4_nory3")
-theme_override_font_sizes/font_size = 100
-theme_override_styles/normal = SubResource("StyleBoxFlat_1l0v7")
 text = "Quit"
