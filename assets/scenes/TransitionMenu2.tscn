@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4a404tpjshsg"]
+
+[ext_resource type="FontFile" uid="uid://bqeasmhefa2v6" path="res://assets/fonts/Trajan Pro Regular.ttf" id="1_q8m4y"]
+
+[node name="TransitionMenu2" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 2998.0
+offset_bottom = 2510.0
+color = Color(0, 0, 0, 1)
+
+[node name="Night2Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1254.0
+offset_top = 1106.0
+offset_right = 1773.0
+offset_bottom = 1206.0
+theme_override_fonts/font = ExtResource("1_q8m4y")
+theme_override_font_sizes/font_size = 100
+text = "Night 3..."

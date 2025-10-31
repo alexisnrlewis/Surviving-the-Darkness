@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://dgtot8tktbdia"]
+[gd_scene load_steps=9 format=3 uid="uid://dgtot8tktbdia"]
 
 [ext_resource type="Script" uid="uid://bfhfqf6l3cpjk" path="res://scripts/MainMenu.gd" id="1_c1eu8"]
 [ext_resource type="Texture2D" uid="uid://d0khcenkv8y31" path="res://assets/UI/GameBackgroundImage.png" id="2_t6dbj"]
+[ext_resource type="AudioStream" uid="uid://cvey2og868rnx" path="res://assets/music/halloween-horror-421078.mp3" id="3_c1eu8"]
 [ext_resource type="FontFile" uid="uid://bqeasmhefa2v6" path="res://assets/fonts/Trajan Pro Regular.ttf" id="4_nory3"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t6dbj"]
@@ -26,6 +27,9 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_c1eu8")
 
+[node name="Halloween-horror-421078" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_c1eu8")
+
 [node name="MainMenuBackgroundImage" type="TextureRect" parent="."]
 layout_mode = 0
 offset_right = 3522.0
@@ -44,15 +48,14 @@ text = "Surviving the Darkness"
 
 [node name="GameOptions" type="VBoxContainer" parent="."]
 layout_mode = 0
-offset_left = 1249.0
+offset_left = 1282.0
 offset_top = 1165.0
-offset_right = 2151.0
+offset_right = 2145.0
 offset_bottom = 1581.0
 
 [node name="PlayButton" type="Button" parent="GameOptions"]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(1, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_nory3")
 theme_override_font_sizes/font_size = 100
 theme_override_styles/normal = SubResource("StyleBoxFlat_t6dbj")
@@ -60,7 +63,8 @@ text = "Play"
 
 [node name="SettingsButton" type="Button" parent="GameOptions"]
 layout_mode = 2
-theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_nory3")
 theme_override_font_sizes/font_size = 100
 theme_override_styles/normal = SubResource("StyleBoxFlat_u804d")
@@ -68,7 +72,8 @@ text = "Settings"
 
 [node name="CreditsButton" type="Button" parent="GameOptions"]
 layout_mode = 2
-theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_nory3")
 theme_override_font_sizes/font_size = 100
 theme_override_styles/normal = SubResource("StyleBoxFlat_c1eu8")
@@ -77,7 +82,6 @@ text = "Credits"
 [node name="QuitButton" type="Button" parent="GameOptions"]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(1, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_nory3")
 theme_override_font_sizes/font_size = 100
 theme_override_styles/normal = SubResource("StyleBoxFlat_1l0v7")

@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://bkwxk516t5x2k"]
+
+[ext_resource type="FontFile" uid="uid://bqeasmhefa2v6" path="res://assets/fonts/Trajan Pro Regular.ttf" id="1_y7rxo"]
+
+[node name="EndingTransitionMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 3016.0
+offset_bottom = 2514.0
+color = Color(0, 0, 0, 1)
+
+[node name="EndLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 510.0
+offset_top = 1121.0
+offset_right = 2606.0
+offset_bottom = 1221.0
+theme_override_fonts/font = ExtResource("1_y7rxo")
+theme_override_font_sizes/font_size = 100
+text = "Congrats, you survived all 5 nights!"
