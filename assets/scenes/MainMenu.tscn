@@ -1,8 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://dgtot8tktbdia"]
+[gd_scene load_steps=8 format=3 uid="uid://dgtot8tktbdia"]
 
 [ext_resource type="Script" uid="uid://bfhfqf6l3cpjk" path="res://scripts/MainMenu.gd" id="1_c1eu8"]
 [ext_resource type="Texture2D" uid="uid://d0khcenkv8y31" path="res://assets/UI/GameBackgroundImage.png" id="2_t6dbj"]
-[ext_resource type="AudioStream" uid="uid://cvey2og868rnx" path="res://assets/music/halloween-horror-421078.mp3" id="3_c1eu8"]
 [ext_resource type="FontFile" uid="uid://bqeasmhefa2v6" path="res://assets/fonts/Trajan Pro Regular.ttf" id="4_nory3"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t6dbj"]
@@ -26,9 +25,6 @@ offset_bottom = 0.255859
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_c1eu8")
-
-[node name="Halloween-horror-421078" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("3_c1eu8")
 
 [node name="MainMenuBackgroundImage" type="TextureRect" parent="."]
 layout_mode = 0
