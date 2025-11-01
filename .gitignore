@@ -28,3 +28,4 @@ mono_crash.*.json
 bin/
 build/
 dist/
+assets/scenes/GraphicsMenu.tscn

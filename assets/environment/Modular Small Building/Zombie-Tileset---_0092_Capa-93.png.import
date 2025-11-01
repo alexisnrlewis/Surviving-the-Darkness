@@ -1,0 +1,20 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture2D"
+uid="uid://cfrc11pitr18x"
+path="res://.godot/imported/Zombie-Tileset---_0092_Capa-93.png-c7d24d3c53567327bea7820005452b80.res"
+group_file="res://assets/environment/Atlas/BuildingsandCars.png"
+valid=true
+[deps]
+
+
+source_file="res://assets/environment/Modular Small Building/Zombie-Tileset---_0092_Capa-93.png"
+dest_files=["res://.godot/imported/Zombie-Tileset---_0092_Capa-93.png-c7d24d3c53567327bea7820005452b80.res"]
+
+[params]
+
+atlas_file="res://assets/environment/Atlas/BuildingsandCars.png"
+import_mode=0
+crop_to_region=false
+trim_alpha_border_from_region=true

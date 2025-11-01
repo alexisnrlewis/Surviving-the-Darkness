@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://yea150442j2b"]
+[gd_scene load_steps=3 format=3 uid="uid://yea150442j2b"]
 
-[ext_resource type="Script" uid="uid://danvg0uc2wx38" path="res://scripts/GraphicsMenu.gd" id="1_0wu4b"]
-[ext_resource type="FontFile" uid="uid://d4aco106sjx01" path="res://assets/fonts/Trajan Pro Regular/Trajan Pro Regular.ttf" id="2_7xg7n"]
-[ext_resource type="Texture2D" uid="uid://1k1cdlhvb4cw" path="res://assets/UI/GraphicsMenuImage.png" id="3_aacf7"]
+[ext_resource type="Script" uid="uid://bhpndgd6vf2j4" path="res://scripts/GraphicsMenu.gd" id="1_0wu4b"]
+[ext_resource type="Texture2D" uid="uid://cfb80yl8ncuvm" path="res://assets/UI/GraphicsMenuImage.png" id="3_aacf7"]
 
 [node name="GraphicsMenu" type="Control"]
 layout_mode = 3
@@ -23,7 +22,6 @@ offset_left = 1136.0
 offset_top = 84.0
 offset_right = 2170.0
 offset_bottom = 284.0
-theme_override_fonts/font = ExtResource("2_7xg7n")
 theme_override_font_sizes/font_size = 200
 text = "Graphics"
 
@@ -42,14 +40,12 @@ offset_bottom = 960.0
 [node name="ResolutionLabel" type="Label" parent="GraphicsDesc"]
 custom_minimum_size = Vector2(300, 100)
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_7xg7n")
 theme_override_font_sizes/font_size = 75
 text = "Resolution/Screen Size:"
 
 [node name="FullscreenLabel" type="Label" parent="GraphicsDesc"]
 custom_minimum_size = Vector2(300, 100)
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_7xg7n")
 theme_override_font_sizes/font_size = 75
 text = "Fullscreen:"
 
@@ -59,7 +55,6 @@ offset_left = 1510.0
 offset_top = 1374.0
 offset_right = 1853.0
 offset_bottom = 1582.0
-theme_override_fonts/font = ExtResource("2_7xg7n")
 theme_override_font_sizes/font_size = 125
 text = "Back"
 
@@ -74,7 +69,6 @@ offset_bottom = 945.0
 [node name="ResolutionOption" type="OptionButton" parent="VBoxContainer"]
 custom_minimum_size = Vector2(1.5, 1.5)
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_7xg7n")
 theme_override_font_sizes/font_size = 75
 item_count = 3
 popup/item_0/text = "800X600"
